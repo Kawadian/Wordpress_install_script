@@ -167,9 +167,9 @@ HTTPS_URL="https://$IP_ADDR:$HTTPS_PORT"
 
 echo -e "WordPress has been installed successfully!\n"
 echo "---------------------------------"
-echo "インストールディレクトリ: $WP_DIR/wordpress"
-echo "データベースのユーザー名: $DB_USER"
-echo "データベースのパスワード: $DB_PASS"
+echo "Installation Directory: $WP_DIR/wordpress"
+echo "Username of Database: $DB_USER"
+echo "Password of Database: $DB_PASS"
 if [ "$ENABLE_HTTPS" == "y" ]; then
     echo "WordPress URL: $HTTPS_URL"
 else
@@ -178,7 +178,7 @@ fi
 echo "---------------------------------"
 
 # Save the installation information to a text file
-read -p "インストール情報をテキストファイルとして保存しますか？(y/n): " SAVE_TO_FILE
+read -p "Do you want to save the installation information as a text file?(y/n): " SAVE_TO_FILE
 if [ "$SAVE_TO_FILE" == "y" ]; then
     INFO_FILE="wordpress_install_info.txt"
     echo -e "Installed Directory: $WP_DIR/wordpress\nUsername of Database: $DB_USER\Password of Database: $DB_PASS\n" > $INFO_FILE

@@ -56,13 +56,13 @@ sudo ./install_wordpress.sh
 WordPress has been installed successfully!
 
 ---------------------------------
-インストールディレクトリ: /srv/www/wordpress
-データベースのユーザー名: wordpress
-データベースのパスワード: randompassword123
+Installation Directory: /srv/www/wordpress
+Username of Database: wordpress
+Password of Database: randompassword123
 WordPress URL: http://192.168.1.100:80
 ---------------------------------
 
-インストール情報をテキストファイルとして保存しますか？(y/n): y
+Do you want to save the installation information as a text file?(y/n): y
 Installation information has been saved to wordpress_install_info.txt file. Please remove ASAP for security reasons.
 ```
 
